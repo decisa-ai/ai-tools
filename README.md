@@ -1,5 +1,7 @@
 # Decisa AI Tools
 
+**English** · [Português (BR)](README.pt-BR.md) · [Español](README.es.md)
+
 Integrations that connect [Decisa](https://decisa.ai) — an advertising operating
 system (Campaign Management + Attribution) — to AI coding agents and assistants.
 
