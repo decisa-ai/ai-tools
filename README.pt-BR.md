@@ -17,8 +17,8 @@ desde o início.
 | Caminho | O que é | Funciona em |
 |---------|---------|-------------|
 | [`plugins/decisa/`](plugins/decisa) | Plugin do Claude Code: servidor MCP do Decisa + skills de uso | Claude Code |
-| `cursor/` | *(planejado)* Regras do Cursor + config MCP | Cursor |
-| `chatgpt/` | *(planejado)* Guia de conector / GPT | ChatGPT |
+| [`cursor/`](cursor) | Regras do Cursor + config MCP | Cursor |
+| [`chatgpt/`](chatgpt) | Guia de configuração de conector personalizado (modo desenvolvedor) | ChatGPT |
 
 O servidor MCP em si funciona em **qualquer** cliente MCP. Este repositório existe
 para deixar cada cliente *bom* em usá-lo.
@@ -61,6 +61,32 @@ Isso te dá, em um único passo:
 O Decisa roda em **modo de conta**: uma conexão abrange todos os seus workspaces.
 Sempre chame `list_workspaces` primeiro e depois passe `workspace_id` em todas as
 demais ferramentas. A skill de orientação cobre o resto.
+
+## Cursor: instalação
+
+[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=decisa&config=eyJ1cmwiOiJodHRwczovL21jcC5kZWNpc2EuYWkifQ==)
+
+Um clique adiciona o servidor MCP do Decisa; autentique via OAuth em **Settings → MCP**.
+O GitHub remove links `cursor://`, então se o botão não fizer nada, copie
+[`cursor/mcp.json`](cursor/mcp.json) para `.cursor/mcp.json`.
+
+Para a camada de orientação, copie os arquivos `.mdc` de [`cursor/rules/`](cursor/rules)
+(as mesmas skills, portadas para Regras do Cursor) para o `.cursor/rules/` do seu
+projeto. Passos completos: [`cursor/README.md`](cursor/README.md).
+
+## ChatGPT: instalação
+
+O ChatGPT conecta via um **conector personalizado** (modo desenvolvedor). Não há
+arquivo de config — você cola a URL e faz login:
+
+1. **Settings → Connectors**, ative o **Developer mode**.
+2. **Add custom connector**, cole `https://mcp.decisa.ai` e salve.
+3. Aprove o login do Decisa quando o navegador abrir e depois habilite o conector
+   **Decisa** em um chat.
+
+Requer um plano pago do ChatGPT (Plus, Pro, Business ou Enterprise). O ChatGPT não
+tem camada de skills/regras, então peça ao agente para chamar `get_decisa_docs`
+primeiro para orientação. Passos completos: [`chatgpt/README.md`](chatgpt/README.md).
 
 ## Usar qualquer cliente MCP (sem plugin)
 

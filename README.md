@@ -15,8 +15,8 @@ guidance** so an agent knows how to use Decisa safely out of the box.
 | Path | What it is | Works in |
 |------|------------|----------|
 | [`plugins/decisa/`](plugins/decisa) | Claude Code plugin: Decisa MCP server + usage skills | Claude Code |
-| `cursor/` | *(planned)* Cursor rules + MCP config | Cursor |
-| `chatgpt/` | *(planned)* Connector / GPT setup guide | ChatGPT |
+| [`cursor/`](cursor) | Cursor Rules + MCP config | Cursor |
+| [`chatgpt/`](chatgpt) | Custom-connector setup guide (Developer mode) | ChatGPT |
 
 The MCP server itself works in **any** MCP client. This repo is about making each
 client *good* at using it.
@@ -56,6 +56,32 @@ That gives you, in one step:
 Decisa runs in **account mode**: one connection spans all your workspaces. Always
 call `list_workspaces` first, then pass `workspace_id` on every other tool. The
 orientation skill covers the rest.
+
+## Cursor: install
+
+[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=decisa&config=eyJ1cmwiOiJodHRwczovL21jcC5kZWNpc2EuYWkifQ==)
+
+One click adds the Decisa MCP server; authenticate via OAuth in **Settings → MCP**.
+GitHub strips `cursor://` links, so if the button does nothing, copy
+[`cursor/mcp.json`](cursor/mcp.json) into `.cursor/mcp.json` instead.
+
+For the guidance layer, copy the [`cursor/rules/`](cursor/rules) `.mdc` files (the same
+skills, ported to Cursor Rules) into your project's `.cursor/rules/`. Full steps:
+[`cursor/README.md`](cursor/README.md).
+
+## ChatGPT: install
+
+ChatGPT connects via a **custom connector** (Developer mode). There's no config file
+— you paste the URL and sign in:
+
+1. **Settings → Connectors**, turn on **Developer mode**.
+2. **Add custom connector**, paste `https://mcp.decisa.ai`, and save.
+3. Approve the Decisa sign-in when the browser opens, then enable the **Decisa**
+   connector in a chat.
+
+Needs a paid ChatGPT plan (Plus, Pro, Business, or Enterprise). ChatGPT has no
+skill/rules layer, so ask the agent to call `get_decisa_docs` first for orientation.
+Full steps: [`chatgpt/README.md`](chatgpt/README.md).
 
 ## Use any MCP client (no plugin)
 
