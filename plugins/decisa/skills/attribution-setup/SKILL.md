@@ -18,13 +18,13 @@ webhook **self-activates** `attribution_enabled` — there is no manual toggle.
 
 1. **Tag the traffic — UTM links.** `create_utm_link` builds trackable short links;
    `get_recommended_tracking_template` returns the right template so `gclid` /
-   `fbclid` / `ttclid` get captured on click. Manage with `list`/`update`/
-   `delete_utm_link`.
+   `fbclid` / `ttclid` get captured on click. Update or remove with
+   `update_utm_link` / `delete_utm_link`.
 2. **Install the pixel.** `create_pixel` provisions the first-party tracker; embed
    it on the site. `set_pixel_focus` to make a pixel the active one for the session.
 3. **Map pixel events.** `create_pixel_event_mapping` tells Decisa how site events
-   (view, add-to-cart, purchase) map to canonical events. Inspect/adjust with
-   `list`/`update`/`delete_pixel_event_mapping`.
+   (view, add-to-cart, purchase) map to canonical events. Adjust with
+   `update_pixel_event_mapping` / `delete_pixel_event_mapping`.
 4. **Define what counts as a conversion.** `create_conversion_trigger` (group them
    with `create_trigger_group`) sets the rules that turn raw events into conversions.
 5. **Connect checkout webhooks** for server-side purchase truth. Decisa handles the

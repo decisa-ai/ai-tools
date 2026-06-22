@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate JSON (manifest + plugin config)
+        run: |
+          set -e
+          for f in \
+            .claude-plugin/marketplace.json \
+            plugins/decisa/.claude-plugin/plugin.json \
+            plugins/decisa/.mcp.json \
+            plugins/decisa/tool-manifest.json; do
+            node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))" && echo "OK  $f"
+          done
+
+      - name: Validate SKILL.md frontmatter
+        run: node scripts/check-frontmatter.mjs
+
+      - name: Skill ↔ tool-surface parity (Rule 27)
+        run: node scripts/skill-parity.mjs

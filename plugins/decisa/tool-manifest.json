@@ -1,0 +1,1323 @@
+{
+    "tools": [
+        {
+            "name": "accept_automation_suggestion",
+            "capabilities": [
+                "automations"
+            ]
+        },
+        {
+            "name": "accept_invitation",
+            "capabilities": []
+        },
+        {
+            "name": "add_google_keywords",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "add_google_negative_keywords",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "add_keyword",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "add_meta_audience_users",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "add_meta_catalog_product",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "apply_attribution_recalculation",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "apply_changeset",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "approve_changeset",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "archive_funnel",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "archive_workspace",
+            "capabilities": []
+        },
+        {
+            "name": "assign_triggers_to_group",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "bulk_delete_conversion_triggers",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "compare_meta_campaigns",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "copy_conversion_triggers",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "create_automation_rule",
+            "capabilities": [
+                "automations"
+            ]
+        },
+        {
+            "name": "create_automation_snippet",
+            "capabilities": [
+                "automations"
+            ]
+        },
+        {
+            "name": "create_bulk_changeset",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_bulk_meta_changeset",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_changeset",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_conversion_trigger",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "create_funnel",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "create_google_ad_group",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_google_callout",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_google_campaign",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_google_email_report",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_google_pmax_campaign",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_google_responsive_search_ad",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_google_shopping_listing_group_tree",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_google_sitelink",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_google_structured_snippet",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_manual_sale",
+            "capabilities": []
+        },
+        {
+            "name": "create_meta_ad",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_meta_adset",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_meta_budget_schedule",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_meta_campaign",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_meta_catalog",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_meta_creative",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_meta_creative_upload_intent",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_meta_custom_audience",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_meta_lead_gen_form",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_meta_lookalike_audience",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_meta_product_set",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_meta_value_rule_set",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_pixel",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "create_pixel_event_mapping",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "create_shared_report",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "create_tiktok_campaign",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_trigger_group",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "create_utm_link",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "create_workspace",
+            "capabilities": []
+        },
+        {
+            "name": "delete_automation_rule",
+            "capabilities": [
+                "automations"
+            ]
+        },
+        {
+            "name": "delete_automation_snippet",
+            "capabilities": [
+                "automations"
+            ]
+        },
+        {
+            "name": "delete_conversion_trigger",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "delete_google_email_report",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "delete_pixel",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "delete_pixel_event_mapping",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "delete_trigger_group",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "delete_utm_link",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "delete_workspace",
+            "capabilities": []
+        },
+        {
+            "name": "disconnect_google_account",
+            "capabilities": []
+        },
+        {
+            "name": "dismiss_automation_suggestion",
+            "capabilities": [
+                "automations"
+            ]
+        },
+        {
+            "name": "dismiss_notification",
+            "capabilities": []
+        },
+        {
+            "name": "download_google_invoice_pdf",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "duplicate_funnel",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "duplicate_meta_ad",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "duplicate_meta_adset",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "duplicate_meta_campaign",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "enable_ad",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "enable_ad_group",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "enable_campaign",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "enable_google_keywords",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "execute_safe_google_gaql_query",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "explain_recommendation",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "favorite_campaign",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "generate_connection_link",
+            "capabilities": []
+        },
+        {
+            "name": "get_attribution_config",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "get_attribution_match_rate",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "get_campaign_funnel",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_campaign_roas",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_changeset",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_conversion_evidence",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "get_decisa_docs",
+            "capabilities": []
+        },
+        {
+            "name": "get_funnel_catalog",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "get_funnel_config",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "get_funnel_definition",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "get_funnel_flow",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "get_funnel_replay",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "get_funnel_stats",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "get_google_auction_insights",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_google_bidding_strategy_report",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_google_device_performance",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_google_geo_performance",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_google_hour_performance",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_google_keyword_ideas",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_google_pmax_asset_groups",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_google_search_terms",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_meta_account_info",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_meta_ad_creative",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_meta_ad_image",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_meta_business_assets",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_meta_industry_benchmark",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_meta_insights",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_meta_interest_suggestions",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_meta_opportunity_score",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_meta_signal_diagnostics",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_recommendation_acceptance",
+            "capabilities": []
+        },
+        {
+            "name": "get_recommended_tracking_template",
+            "capabilities": []
+        },
+        {
+            "name": "get_roas_discrepancy",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "get_signals_health",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "get_visitor_timeline",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "get_webhook_coverage",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "instantiate_rule_template",
+            "capabilities": [
+                "automations"
+            ]
+        },
+        {
+            "name": "invite_to_workspace",
+            "capabilities": []
+        },
+        {
+            "name": "link_ad_account",
+            "capabilities": []
+        },
+        {
+            "name": "list_ad_account_metrics",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_audit_reports",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_automation_rules",
+            "capabilities": [
+                "automations"
+            ]
+        },
+        {
+            "name": "list_automation_snippets",
+            "capabilities": [
+                "automations"
+            ]
+        },
+        {
+            "name": "list_automation_suggestions",
+            "capabilities": [
+                "automations"
+            ]
+        },
+        {
+            "name": "list_campaign_favorites",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_campaign_structure",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_campaign_table_rows",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_campaigns",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_changesets",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_clicks",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "list_conversion_destinations",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "list_conversion_triggers",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "list_conversions",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "list_creative_performance",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_funnel_domain_groups",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "list_funnels",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "list_google_assets",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_google_email_reports",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_google_invoices",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_google_negative_keywords",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_meta_catalogs",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_meta_creative_library",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_meta_custom_audiences",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_meta_lead_gen_forms",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_meta_pages",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_meta_product_sets",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_meta_saved_audiences",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_meta_value_rule_sets",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "list_notifications",
+            "capabilities": []
+        },
+        {
+            "name": "list_pixel_events",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "list_recent_pixel_events",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "list_rule_templates",
+            "capabilities": [
+                "automations"
+            ]
+        },
+        {
+            "name": "list_test_events",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "list_unmapped_received_events",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "list_workspaces",
+            "capabilities": []
+        },
+        {
+            "name": "mark_notification_read",
+            "capabilities": []
+        },
+        {
+            "name": "pause_ad",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "pause_ad_group",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "pause_campaign",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "pause_google_keywords",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "preview_attribution_recalculation",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "publish_meta_lead_gen_form",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "query_google_ads_api_docs",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "reject_changeset",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "remove_google_extension",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "remove_google_keywords",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "remove_google_negative_keywords",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "remove_member",
+            "capabilities": []
+        },
+        {
+            "name": "remove_meta_audience_users",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "reseed_funnel",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "restore_funnel",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "restore_workspace",
+            "capabilities": []
+        },
+        {
+            "name": "retry_conversion_delivery",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "revoke_shared_report",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "roas_report",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "rotate_inbound_webhook_secret",
+            "capabilities": []
+        },
+        {
+            "name": "run_automation_rule",
+            "capabilities": [
+                "automations"
+            ]
+        },
+        {
+            "name": "search_meta_ads_library",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "search_meta_behaviors",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "search_meta_demographics",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "search_meta_entities",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "search_meta_geo_locations",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "search_meta_interests",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "seed_funnel",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "set_attribution_config",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "set_campaign_exclusion",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "set_funnel_config",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "set_funnel_definition",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "set_funnel_domain_group",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "set_funnel_flow_config",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "set_goal",
+            "capabilities": []
+        },
+        {
+            "name": "set_google_conversion_action_primary",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "set_google_geo_targeting",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "set_google_language_targeting",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "set_pixel_focus",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "set_workspace_focus",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "submit_changeset",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "sync_ad_account",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "test_connection",
+            "capabilities": []
+        },
+        {
+            "name": "unfavorite_campaign",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "unlink_ad_account",
+            "capabilities": []
+        },
+        {
+            "name": "update_ad_group_budget",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_automation_rule",
+            "capabilities": [
+                "automations"
+            ]
+        },
+        {
+            "name": "update_campaign_budget",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_changeset",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_conversion_trigger",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "update_google_campaign_url_options",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_google_email_report",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_google_extension_status",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_google_keyword_bid",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_google_network_settings",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_google_pmax_asset_group",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_locale",
+            "capabilities": []
+        },
+        {
+            "name": "update_member_role",
+            "capabilities": []
+        },
+        {
+            "name": "update_meta_ad",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_meta_adset",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_meta_bid_controls",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_meta_campaign",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_meta_catalog_product",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_meta_creative",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_meta_custom_audience",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "update_pixel",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "update_pixel_event_mapping",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "update_trigger_group",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "update_utm_link",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "update_workspace",
+            "capabilities": []
+        },
+        {
+            "name": "upload_google_asset",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "upload_meta_ad_image",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "upload_meta_offline_conversions",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "upload_meta_video",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "validate_meta_interests",
+            "capabilities": [
+                "campaign_management"
+            ]
+        }
+    ],
+    "count": 228
+}

@@ -1,0 +1,17 @@
+# Non-tool backticked snake_case terms allowed in SKILL.md files.
+# These are domain/identifier words, NOT MCP tools — the parity check
+# (scripts/skill-parity.mjs) ignores them. Add a term here only when it is
+# genuinely not a tool; if a token is a renamed/removed tool, fix the skill.
+
+# Workspace / request identifiers
+workspace_id
+
+# Capability flags (Capability enum)
+attribution_enabled
+campaign_management_enabled
+ai_advisor_v2_enabled
+
+# Click identifiers
+gclid
+fbclid
+ttclid
