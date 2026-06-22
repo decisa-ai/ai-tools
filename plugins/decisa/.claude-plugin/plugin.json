@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "decisa",
+  "displayName": "Decisa",
+  "version": "0.1.0",
+  "description": "Connects the Decisa MCP server and teaches agents to use it safely — workspace discovery, capability gating, the changeset draft flow, and ROAS investigation.",
+  "author": {
+    "name": "Decisa",
+    "url": "https://decisa.ai"
+  },
+  "homepage": "https://docs.decisa.ai",
+  "repository": "https://github.com/decisa-ai/ai-tools",
+  "license": "MIT",
+  "keywords": ["decisa", "mcp", "advertising", "attribution", "roas"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

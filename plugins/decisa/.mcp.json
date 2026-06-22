@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "decisa": {
+      "type": "http",
+      "url": "https://mcp.decisa.ai"
+    }
+  }
+}

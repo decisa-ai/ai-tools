@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
+  "name": "decisa-ai",
+  "owner": {
+    "name": "Decisa",
+    "url": "https://decisa.ai"
+  },
+  "description": "Decisa AI client integrations — install Decisa's MCP server and usage skills into your AI tools.",
+  "plugins": [
+    {
+      "name": "decisa",
+      "displayName": "Decisa",
+      "source": "./plugins/decisa",
+      "description": "Connects the Decisa MCP server and bundles skills that teach agents how to use it safely — workspace discovery, the changeset draft flow, and ROAS investigation.",
+      "homepage": "https://docs.decisa.ai",
+      "repository": "https://github.com/decisa-ai/ai-tools",
+      "license": "MIT",
+      "keywords": ["decisa", "mcp", "advertising", "attribution", "roas", "google-ads", "meta-ads", "tiktok-ads"],
+      "category": "productivity"
+    }
+  ]
+}
