@@ -37,6 +37,12 @@ That gives you, in one step:
     any change that spends money or touches live ad-platform state.
   - **roas-investigation** — the read-only diagnostic ladder for "why is this
     campaign losing money / why does ROAS disagree with the platform?"
+  - **campaign-launch** — build a Google/Meta/TikTok campaign top-down, with spend
+    turned on only through the changeset flow.
+  - **attribution-setup** — UTM links, pixel, event mappings, conversion triggers,
+    and the verification steps that prove data is flowing.
+  - **signals-diagnostics** — read-only triage when tracking looks broken: isolate
+    whether events aren't arriving, are unmapped, or aren't being delivered.
 
 ### First call, every session
 
