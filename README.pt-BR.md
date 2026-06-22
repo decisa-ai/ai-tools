@@ -17,7 +17,7 @@ desde o início.
 | Caminho | O que é | Funciona em |
 |---------|---------|-------------|
 | [`plugins/decisa/`](plugins/decisa) | Plugin do Claude Code: servidor MCP do Decisa + skills de uso | Claude Code |
-| `cursor/` | *(planejado)* Regras do Cursor + config MCP | Cursor |
+| [`cursor/`](cursor) | Regras do Cursor + config MCP | Cursor |
 | `chatgpt/` | *(planejado)* Guia de conector / GPT | ChatGPT |
 
 O servidor MCP em si funciona em **qualquer** cliente MCP. Este repositório existe
@@ -61,6 +61,18 @@ Isso te dá, em um único passo:
 O Decisa roda em **modo de conta**: uma conexão abrange todos os seus workspaces.
 Sempre chame `list_workspaces` primeiro e depois passe `workspace_id` em todas as
 demais ferramentas. A skill de orientação cobre o resto.
+
+## Cursor: instalação
+
+[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=decisa&config=eyJ1cmwiOiJodHRwczovL21jcC5kZWNpc2EuYWkifQ==)
+
+Um clique adiciona o servidor MCP do Decisa; autentique via OAuth em **Settings → MCP**.
+O GitHub remove links `cursor://`, então se o botão não fizer nada, copie
+[`cursor/mcp.json`](cursor/mcp.json) para `.cursor/mcp.json`.
+
+Para a camada de orientação, copie os arquivos `.mdc` de [`cursor/rules/`](cursor/rules)
+(as mesmas skills, portadas para Regras do Cursor) para o `.cursor/rules/` do seu
+projeto. Passos completos: [`cursor/README.md`](cursor/README.md).
 
 ## Usar qualquer cliente MCP (sem plugin)
 
