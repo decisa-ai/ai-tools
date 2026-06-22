@@ -18,7 +18,7 @@ segura desde el primer momento.
 |------|--------|-------------|
 | [`plugins/decisa/`](plugins/decisa) | Plugin de Claude Code: servidor MCP de Decisa + skills de uso | Claude Code |
 | [`cursor/`](cursor) | Reglas de Cursor + config MCP | Cursor |
-| `chatgpt/` | *(planeado)* Guía de conector / GPT | ChatGPT |
+| [`chatgpt/`](chatgpt) | Guía de configuración del conector personalizado (modo desarrollador) | ChatGPT |
 
 El servidor MCP en sí funciona en **cualquier** cliente MCP. Este repositorio existe
 para que cada cliente sea *bueno* usándolo.
@@ -73,6 +73,20 @@ GitHub elimina los enlaces `cursor://`, así que si el botón no hace nada, copi
 Para la capa de guía, copia los archivos `.mdc` de [`cursor/rules/`](cursor/rules)
 (las mismas skills, portadas a Reglas de Cursor) en el `.cursor/rules/` de tu proyecto.
 Pasos completos: [`cursor/README.md`](cursor/README.md).
+
+## ChatGPT: instalación
+
+ChatGPT se conecta mediante un **conector personalizado** (modo desarrollador). No
+hay archivo de configuración — pegas la URL e inicias sesión:
+
+1. **Settings → Connectors**, activa el **Developer mode**.
+2. **Add custom connector**, pega `https://mcp.decisa.ai` y guarda.
+3. Aprueba el inicio de sesión de Decisa cuando se abra el navegador y luego habilita
+   el conector **Decisa** en un chat.
+
+Requiere un plan de pago de ChatGPT (Plus, Pro, Business o Enterprise). ChatGPT no
+tiene capa de skills/reglas, así que pídele al agente que llame a `get_decisa_docs`
+primero para orientación. Pasos completos: [`chatgpt/README.md`](chatgpt/README.md).
 
 ## Usar cualquier cliente MCP (sin plugin)
 
