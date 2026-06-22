@@ -43,6 +43,11 @@ That gives you, in one step:
     and the verification steps that prove data is flowing.
   - **signals-diagnostics** — read-only triage when tracking looks broken: isolate
     whether events aren't arriving, are unmapped, or aren't being delivered.
+  - **audit-and-optimize** — the advisor loop: read audit findings/signals →
+    explain → draft the fix as a changeset → apply safely.
+  - **automations** — the rules engine: suggestions, templates, and rules that
+    propose draft changes for review (never spend autonomously).
+  - **funnels** — build and diagnose conversion funnels; find where users drop off.
 
 ### First call, every session
 

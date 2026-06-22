@@ -6,10 +6,18 @@
 # Workspace / request identifiers
 workspace_id
 
-# Capability flags (Capability enum)
+# Capability activation flags (as described in the capability table)
 attribution_enabled
 campaign_management_enabled
 ai_advisor_v2_enabled
+
+# Capability enum values (App\Enums\Capability)
+attribution
+campaign_management
+ai_advisor_v2
+automations
+creatives
+cohorts
 
 # Click identifiers
 gclid

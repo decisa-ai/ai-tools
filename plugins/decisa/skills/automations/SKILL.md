@@ -1,0 +1,51 @@
+---
+name: automations
+description: Use this when a user wants to set up, review, or run automation rules in Decisa — "automate pausing bad ads", "rule to scale winners", acting on automation suggestions, or using rule templates. Explains the suggestion→template→rule flow and the hard safety property that automations propose drafts, never spend silently. Read decisa-orientation and changeset-safety first.
+keywords: [automation, rule, workflow, regra, automação, automatizar, gatilho, template, "regra automática", snippet]
+---
+
+# Automations — rules that propose, never spend silently
+
+Decisa's automation engine is a **draft-only executor** (Rule 17): a rule evaluates
+conditions and, when it fires, produces a *proposed change* that still flows through
+the changeset review path — it does not move money on its own. Treat automations as
+a standing advisor, not an autopilot, and make that explicit to the user.
+
+## Preconditions
+
+Requires the `automations` capability on the workspace. If the automation tools are
+unavailable, the workspace hasn't activated it (see `decisa-orientation`).
+
+## The flow
+
+**1. Start from a suggestion or a template — don't author blind.**
+- `list_automation_suggestions` — smart, context-derived rule ideas for this
+  workspace. `accept_automation_suggestion` turns one into a rule;
+  `dismiss_automation_suggestion` declines it.
+- `list_rule_templates` → `instantiate_rule_template` — proven rule shapes (pause
+  underperformers, scale winners) parameterized for the account.
+
+**2. Author / adjust the rule.**
+- `create_automation_rule`, `update_automation_rule`, `delete_automation_rule`,
+  `list_automation_rules`.
+- Reusable condition/action fragments: `create_automation_snippet`,
+  `list_automation_snippets`, `delete_automation_snippet`.
+
+**3. Run and observe.**
+- `run_automation_rule` — evaluate a rule now (e.g. to preview what it would do)
+  rather than waiting for the scheduler.
+- A rule that fires produces a draft change → it lands in the changeset flow, where
+  it is previewed and approved like any other (see `changeset-safety`). Nothing the
+  automation proposes spends money until a human approves the resulting changeset.
+
+## Guardrails
+
+- **State the safety model up front.** Tell the user automations *draft* changes for
+  review; they never apply spend changes autonomously. This is the whole point —
+  don't let the user believe they've armed a hands-off bot.
+- **Prefer a suggestion or template** over a hand-rolled rule when one fits — they
+  encode safer defaults.
+- **Show the rule's conditions and intended action** before creating it, and
+  `run_automation_rule` to preview before relying on the schedule.
+- **Scope every rule to the workspace** and confirm which account/campaigns it
+  targets — a too-broad rule is how automation burns money at scale.
