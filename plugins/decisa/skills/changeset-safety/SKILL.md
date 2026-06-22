@@ -1,6 +1,7 @@
 ---
 name: changeset-safety
 description: Use this whenever a Decisa task would change money or live ad-platform state — budgets, bids, pausing/enabling campaigns or ads, keywords, creatives, bulk edits. Explains the changeset lifecycle (propose → review → approve → apply → audit), single vs bulk changesets, and the rule that every spend-affecting change is previewed and approved before it touches the platform. Read decisa-orientation first.
+keywords: [changeset, approval, draft, budget, bid, pause, mudança, rascunho, aprovação, orçamento, lance, pausar, alteração, aplicar]
 ---
 
 # Changeset safety — never mutate spend blind

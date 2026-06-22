@@ -1,6 +1,7 @@
 ---
 name: attribution-setup
 description: Use this when a user wants to start tracking conversions in Decisa, set up or verify attribution — UTM links, the first-party pixel, pixel event mappings, conversion triggers, or checkout webhooks. Gives the setup order and the verification steps that prove data is actually flowing. Read decisa-orientation first.
+keywords: [attribution, utm, pixel, tracking, webhook, conversion, atribuição, rastreamento, conversão, "instalar pixel", kiwify, hotmart]
 ---
 
 # Attribution setup
@@ -26,8 +27,11 @@ webhook **self-activates** `attribution_enabled` — there is no manual toggle.
    `list`/`update`/`delete_pixel_event_mapping`.
 4. **Define what counts as a conversion.** `create_conversion_trigger` (group them
    with `create_trigger_group`) sets the rules that turn raw events into conversions.
-5. **Connect checkout webhooks** for server-side purchase truth (Shopify, Stripe,
-   Kiwify, and the generic mapper). Secret rotation: `rotate_inbound_webhook_secret`.
+5. **Connect checkout webhooks** for server-side purchase truth. Decisa handles the
+   major brands directly (Shopify, Stripe) plus the Brazilian info-product ecosystem
+   (Kiwify, Hotmart, Cakto, Eduzz, Monetizze, Yampi, NuvemShop), with a config-driven
+   generic mapper for the long tail of "-Pay" gateways. Secret rotation:
+   `rotate_inbound_webhook_secret`.
 6. **Set the model.** `get_attribution_config` / `set_attribution_config` controls
    the attribution model (e.g. last-click) and windows.
 

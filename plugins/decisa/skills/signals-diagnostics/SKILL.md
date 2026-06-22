@@ -1,6 +1,7 @@
 ---
 name: signals-diagnostics
 description: Use this when tracking looks broken in Decisa — conversions missing, events not showing, CAPI/destination pushes failing, or "why is my data wrong?" Gives the read-only triage sequence that isolates WHERE the pipe is broken (events not arriving vs arriving-but-unmapped vs matched-but-not-delivered). Read decisa-orientation first.
+keywords: [signals, tracking, events, delivery, capi, sinais, rastreamento, evento, entrega, "não rastreia", diagnóstico]
 ---
 
 # Signals diagnostics
@@ -27,7 +28,8 @@ This is all read-only triage (plus a delivery retry). No changeset needed.
    means signal is landing but falling on the floor for lack of a mapping → add a
    `create_pixel_event_mapping` / conversion trigger.
 4. **Checkout side** — `get_webhook_coverage` surfaces the delivered-but-dropped
-   class for checkout webhooks.
+   class for checkout webhooks (Shopify/Stripe and Brazilian gateways like Kiwify,
+   Hotmart, Cakto, Eduzz).
 5. **Did conversions match? ** — `get_attribution_match_rate`; spot-check a specific
    one with `get_conversion_evidence`.
 6. **Delivery / pushback (class 3)** — `list_conversion_destinations` to see

@@ -1,6 +1,7 @@
 ---
 name: campaign-launch
 description: Use this when a user wants to create or build out an ad campaign in Decisa on Google, Meta, or TikTok — campaigns, ad groups/ad sets, ads, creatives, keywords, or extensions. Explains the per-platform hierarchy, the order to build it, and the hard rule that anything turning on spend goes through the changeset flow. Read decisa-orientation and changeset-safety first.
+keywords: [campaign, ad, adset, "criar campanha", anúncio, "conjunto de anúncios", orçamento, "google ads", "meta ads", tiktok, lançar]
 ---
 
 # Campaign launch

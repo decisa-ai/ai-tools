@@ -1,6 +1,7 @@
 ---
 name: roas-investigation
 description: Use this when a user asks why a campaign is winning or losing money, why Decisa's ROAS disagrees with the ad platform's numbers, or whether a conversion is real. Gives the read-only diagnostic sequence — ROAS → discrepancy → match rate → evidence → visitor timeline — and how to tell a real performance problem from a tracking gap. Read decisa-orientation first. No changesets involved (reads only).
+keywords: [roas, discrepancy, conversion, performance, retorno, atribuição, conversão, campanha, desempenho, "perdendo dinheiro", discrepância]
 ---
 
 # ROAS investigation

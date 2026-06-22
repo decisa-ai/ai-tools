@@ -1,6 +1,7 @@
 ---
 name: decisa-orientation
 description: Read this FIRST whenever working with the Decisa MCP server. Explains how Decisa is structured, the mandatory workspace-discovery step, capability gating, read vs write scopes, and the four core domain models (changesets, attribution, capabilities, funnels) every other Decisa skill builds on. Use before calling any other Decisa tool, or whenever a Decisa call returns "tool unavailable" or a workspace error.
+keywords: [decisa, workspace, mcp, capability, "como usar", começar, configurar, "espaço de trabalho", ajuda]
 ---
 
 # Decisa orientation
@@ -75,6 +76,16 @@ When proposing changes: explain the reasoning, surface uncertainty, prefer
 suggestions over silent actions, and keep everything reversible and auditable.
 Never apply an irreversible or money-spending change without showing the user the
 draft first and getting a clear go-ahead.
+
+## Language & locale
+
+Decisa's market is **Brazil** — most users are native Portuguese speakers and the
+product UI is in pt-BR. Match the user's language: for Brazilian users that means
+**respond in Portuguese (pt-BR)**, and mirror Decisa's own pt-BR terminology rather
+than literal English translations of ad-platform jargon.
+
+Grammar rule for any pt-BR you write: **"Decisa" is masculine** — *o Decisa, do
+Decisa, no Decisa, pro Decisa*; never *a / da / na / pra Decisa*.
 
 ## Where to get more
 
