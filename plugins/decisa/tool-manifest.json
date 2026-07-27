@@ -87,7 +87,19 @@
             ]
         },
         {
+            "name": "confirm_google_conversion_action_mapping",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
             "name": "copy_conversion_triggers",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "create_app",
             "capabilities": [
                 "attribution"
             ]
@@ -189,6 +201,18 @@
             ]
         },
         {
+            "name": "create_kwai_campaign",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_linkedin_campaign",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
             "name": "create_manual_sale",
             "capabilities": []
         },
@@ -265,6 +289,18 @@
             ]
         },
         {
+            "name": "create_microsoft_campaign",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "create_pinterest_campaign",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
             "name": "create_pixel",
             "capabilities": [
                 "attribution"
@@ -303,6 +339,12 @@
         {
             "name": "create_workspace",
             "capabilities": []
+        },
+        {
+            "name": "delete_app",
+            "capabilities": [
+                "attribution"
+            ]
         },
         {
             "name": "delete_automation_rule",
@@ -445,6 +487,12 @@
         {
             "name": "generate_connection_link",
             "capabilities": []
+        },
+        {
+            "name": "get_app",
+            "capabilities": [
+                "attribution"
+            ]
         },
         {
             "name": "get_attribution_config",
@@ -677,6 +725,12 @@
             ]
         },
         {
+            "name": "list_apps",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
             "name": "list_audit_reports",
             "capabilities": [
                 "campaign_management"
@@ -704,6 +758,12 @@
             "name": "list_campaign_favorites",
             "capabilities": [
                 "campaign_management"
+            ]
+        },
+        {
+            "name": "list_campaign_roas",
+            "capabilities": [
+                "attribution"
             ]
         },
         {
@@ -879,6 +939,10 @@
             ]
         },
         {
+            "name": "list_workspace_api_keys",
+            "capabilities": []
+        },
+        {
             "name": "list_workspaces",
             "capabilities": []
         },
@@ -917,6 +981,12 @@
             ]
         },
         {
+            "name": "preview_google_conversion_action_mapping",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
             "name": "publish_meta_lead_gen_form",
             "capabilities": [
                 "campaign_management"
@@ -926,6 +996,12 @@
             "name": "query_google_ads_api_docs",
             "capabilities": [
                 "campaign_management"
+            ]
+        },
+        {
+            "name": "regenerate_app_key",
+            "capabilities": [
+                "attribution"
             ]
         },
         {
@@ -963,6 +1039,12 @@
             ]
         },
         {
+            "name": "rename_funnel",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
             "name": "reseed_funnel",
             "capabilities": [
                 "attribution"
@@ -989,6 +1071,10 @@
             "capabilities": [
                 "attribution"
             ]
+        },
+        {
+            "name": "revoke_workspace_api_key",
+            "capabilities": []
         },
         {
             "name": "roas_report",
@@ -1044,6 +1130,12 @@
         },
         {
             "name": "seed_funnel",
+            "capabilities": [
+                "attribution"
+            ]
+        },
+        {
+            "name": "set_app_pixels",
             "capabilities": [
                 "attribution"
             ]
@@ -1148,6 +1240,12 @@
             "name": "update_ad_group_budget",
             "capabilities": [
                 "campaign_management"
+            ]
+        },
+        {
+            "name": "update_app",
+            "capabilities": [
+                "attribution"
             ]
         },
         {
@@ -1319,5 +1417,5 @@
             ]
         }
     ],
-    "count": 228
+    "count": 245
 }
