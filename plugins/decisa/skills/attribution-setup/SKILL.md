@@ -17,9 +17,13 @@ webhook **self-activates** `attribution_enabled` — there is no manual toggle.
 ## Setup order
 
 1. **Tag the traffic — UTM links.** `create_utm_link` builds trackable short links;
-   `get_recommended_tracking_template` returns the right template so `gclid` /
-   `fbclid` / `ttclid` get captured on click. Update or remove with
-   `update_utm_link` / `delete_utm_link`.
+   `get_recommended_tracking_template` returns the right UTM template for the
+   platform. Update or remove with `update_utm_link` / `delete_utm_link`.
+   **A UTM template does NOT capture the click ID.** `gclid` / `fbclid` / `ttclid`
+   are appended by the ad platform's own auto-tagging, and Google has no `{gclid}`
+   ValueTrack macro — so no final URL suffix can substitute for the account
+   setting. Full UTM tagging with auto-tagging OFF looks perfect and loses every
+   click ID. On Google, verify with `get_google_tracking_blockers` (step 7).
 2. **Install the pixel.** `create_pixel` provisions the first-party tracker; embed
    it on the site. `set_pixel_focus` to make a pixel the active one for the session.
 3. **Map pixel events.** `create_pixel_event_mapping` tells Decisa how site events
@@ -34,6 +38,13 @@ webhook **self-activates** `attribution_enabled` — there is no manual toggle.
    `rotate_inbound_webhook_secret`.
 6. **Set the model.** `get_attribution_config` / `set_attribution_config` controls
    the attribution model (e.g. last-click) and windows.
+7. **Google only — confirm the account can be measured at all.**
+   `get_google_tracking_blockers` checks the three account-level gates no report
+   covers: auto-tagging (OFF = every paid click permanently loses its `gclid`),
+   conversion tracking status, and the customer data terms that gate enhanced
+   conversion uploads. Fix auto-tagging with `update_google_auto_tagging`, which
+   returns a DRAFT changeset; `submit_changeset` → `approve_changeset` →
+   `apply_changeset`.
 
 ## Verify it's actually flowing (do not skip)
 
@@ -44,7 +55,9 @@ webhook **self-activates** `attribution_enabled` — there is no manual toggle.
 - `get_signals_health` — overall pipe health.
 - `get_attribution_match_rate` — how many conversions matched back to a click. Low
   match rate after setup = something upstream (UTM template, pixel, click capture)
-  is misconfigured.
+  is misconfigured. On Google, run `get_google_tracking_blockers` BEFORE chasing the
+  pixel: an account with auto-tagging off produces exactly this symptom while every
+  other check reads green.
 
 ## Guardrails
 

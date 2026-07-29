@@ -619,6 +619,18 @@
             ]
         },
         {
+            "name": "get_google_serving_blockers",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
+            "name": "get_google_tracking_blockers",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
             "name": "get_meta_account_info",
             "capabilities": [
                 "campaign_management"
@@ -1273,6 +1285,12 @@
             ]
         },
         {
+            "name": "update_google_auto_tagging",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
             "name": "update_google_campaign_url_options",
             "capabilities": [
                 "campaign_management"
@@ -1417,5 +1435,5 @@
             ]
         }
     ],
-    "count": 245
+    "count": 248
 }

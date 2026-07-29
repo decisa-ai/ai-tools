@@ -33,6 +33,16 @@ Sanity-check against the `roas-investigation` skill first: a "bad" campaign with
 low attribution match rate is a *tracking* problem, not an optimization target.
 Don't draft a spend cut against mis-tracked data.
 
+**The `google_click_ids_missing` finding is exactly that trap, and it outranks every
+performance finding in the report.** It fires when Google paid clicks arrive with no
+`gclid`/`gbraid`/`wbraid` — those clicks can never be matched to a conversion, so
+every ROAS number for that account is understated and every "pause this loser"
+recommendation built on it is wrong. Diagnose the cause with
+`get_google_tracking_blockers`; the finding is prepare-fixable and drafts an
+`update_google_auto_tagging` changeset. If auto-tagging is already on, that refusal
+is the answer: the loss is a redirect, a tag manager, or unstored iOS traffic.
+**Fix measurement before optimizing against it.**
+
 ## 3. Draft the fix as a changeset (never apply blind)
 
 Every fix that spends money or mutates platform state goes through the changeset

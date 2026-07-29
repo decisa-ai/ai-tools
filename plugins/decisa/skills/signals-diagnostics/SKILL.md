@@ -31,7 +31,13 @@ This is all read-only triage (plus a delivery retry). No changeset needed.
    class for checkout webhooks (Shopify/Stripe and Brazilian gateways like Kiwify,
    Hotmart, Cakto, Eduzz).
 5. **Did conversions match? ** — `get_attribution_match_rate`; spot-check a specific
-   one with `get_conversion_evidence`.
+   one with `get_conversion_evidence`. **If Google traffic is involved and the match
+   rate is low, run `get_google_tracking_blockers` before blaming the pixel.** With
+   account auto-tagging OFF, Google never appends the `gclid` — every paid click
+   arrives fully UTM-tagged and permanently unmatchable, so steps 2–4 all read green
+   while the match rate quietly collapses into `direct`. Fix with
+   `update_google_auto_tagging` (DRAFT changeset; `submit_changeset` →
+   `approve_changeset` → `apply_changeset`).
 6. **Delivery / pushback (class 3)** — `list_conversion_destinations` to see
    configured destinations and their status; `retry_conversion_delivery` to re-push
    a failed one. For Meta specifically, `get_meta_signal_diagnostics` reports event
@@ -52,5 +58,9 @@ This is all read-only triage (plus a delivery retry). No changeset needed.
 - **Don't conflate a delivery failure with a tracking failure** — a CAPI push that
   fails doesn't mean the conversion wasn't recorded; it means it didn't reach the
   platform.
+- **A green pipe does not mean a measurable account.** Every check above can pass
+  while an account-level setting makes matching impossible. `get_google_tracking_blockers`
+  is the only thing that sees those; a failed read there reports `unknown`, never
+  "healthy" — treat unknown as unresolved, not as a pass.
 - This skill diagnoses the *pipe*. For "the ROAS number disagrees with the
   platform," use `roas-investigation` instead.
