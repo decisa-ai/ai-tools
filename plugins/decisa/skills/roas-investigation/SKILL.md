@@ -21,7 +21,10 @@ just under-tracked. This is all read-only; no changeset needed.
 3. **Check tracking health before blaming performance** — `get_attribution_match_rate`.
    Low match rate = many conversions never matched to a click → the campaign may look
    worse than it is. Pair with `get_signals_health` and `get_webhook_coverage` to see
-   if data is simply not arriving.
+   if data is simply not arriving. On Google, also run `get_google_tracking_blockers`:
+   with account auto-tagging off, no paid click ever carries a `gclid`, so the
+   campaign's real revenue lands in `direct` and its ROAS reads near zero no matter
+   how well it performed.
 4. **Verify specific conversions** — `get_conversion_evidence` to see the trail
    behind a conversion (click → session → order), and `list_conversions` /
    `list_clicks` to inspect the raw stream.

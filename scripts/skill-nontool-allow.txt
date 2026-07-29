@@ -23,3 +23,17 @@ cohorts
 gclid
 fbclid
 ttclid
+# Google's iOS/ATT substitutes for gclid — a click carrying either is matchable,
+# so they must be named wherever "missing click ID" is discussed.
+gbraid
+wbraid
+
+# Audit rule identifiers (App\Audits\Rules\*::identifier()) — findings, not tools
+google_click_ids_missing
+
+# Attribution buckets and diagnostic states
+# `direct` = the unattributed remainder of the match rate; `unknown` = the blocker
+# kind get_google_tracking_blockers returns when the live read fails (which must
+# never be read as "healthy").
+direct
+unknown
