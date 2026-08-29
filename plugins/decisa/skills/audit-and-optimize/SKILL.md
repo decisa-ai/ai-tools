@@ -51,6 +51,13 @@ flow (see `changeset-safety`). Typical fixes:
 - **Cut waste** — `add_google_negative_keywords` for junk search terms;
   `pause_google_keywords` for non-converters.
 - **Reallocate / pause** — `update_campaign_budget`, `pause_campaign`.
+- **Fix the bid target** — `update_google_bidding_strategy` when a Google Search
+  campaign is on `maximize_clicks`: it buys traffic and never optimises toward a
+  conversion. Check volume FIRST with `get_google_bidding_strategy_report` and
+  `list_campaign_table_rows` — automated bidding needs roughly 30 conversions in
+  30 days, so switching to a target with near-zero volume leaves the algorithm
+  with no signal at all. There is no max-CPC ceiling under `maximize_conversions`;
+  cost is controlled with `target_cpa`, and only `manual_cpc` bids per click.
 - Bundle related fixes with `create_bulk_changeset`; single fix with
   `create_changeset`.
 

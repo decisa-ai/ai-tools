@@ -37,3 +37,9 @@ google_click_ids_missing
 # never be read as "healthy").
 direct
 unknown
+# Google bidding strategy VALUES (Campaign.bidding_strategy), not tools — the
+# argument update_google_bidding_strategy takes.
+maximize_clicks
+maximize_conversions
+target_cpa
+manual_cpc

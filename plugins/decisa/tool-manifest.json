@@ -1291,6 +1291,12 @@
             ]
         },
         {
+            "name": "update_google_bidding_strategy",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
             "name": "update_google_campaign_url_options",
             "capabilities": [
                 "campaign_management"
@@ -1435,5 +1441,5 @@
             ]
         }
     ],
-    "count": 248
+    "count": 249
 }
