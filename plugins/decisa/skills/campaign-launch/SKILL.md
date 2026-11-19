@@ -43,6 +43,16 @@ translate each platform faithfully with strong defaults — not to flatten them.
 - `create_tiktok_campaign` (TikTok campaign tooling is thinner than Google/Meta —
   set expectations accordingly)
 
+**ChatGPT Ads** (ads inside ChatGPT conversations; only when the workspace has it)
+- `create_openai_campaign` drafts the whole launch in one changeset: campaign,
+  ad group and a chat-card ad (title ≤50 chars, body ≤100, landing page, optional
+  square image URL ≥640×640), all created PAUSED. Budget lives on the campaign
+  only. Bidding: `clicks` (default; no `max_bid` = automatic), `conversions`
+  (needs a ChatGPT Ads conversion event) or `impressions` (needs a CPM `max_bid`).
+- Tracking: `get_recommended_tracking_template` with platform `openai`. Paid
+  clicks use `utm_source=openai` — never `chatgpt`, which is organic ChatGPT
+  traffic.
+
 ## Order of operations
 
 1. **Clarify intent** — objective, daily/lifetime budget, audience, geo, and the
