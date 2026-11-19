@@ -43,3 +43,11 @@ maximize_clicks
 maximize_conversions
 target_cpa
 manual_cpc
+# create_openai_campaign arguments and values (ChatGPT Ads launch) plus the
+# utm_source values the campaign-launch skill contrasts (openai = paid, chatgpt = organic).
+clicks
+conversions
+impressions
+max_bid
+openai
+chatgpt

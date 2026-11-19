@@ -295,6 +295,12 @@
             ]
         },
         {
+            "name": "create_openai_campaign",
+            "capabilities": [
+                "campaign_management"
+            ]
+        },
+        {
             "name": "create_pinterest_campaign",
             "capabilities": [
                 "campaign_management"
@@ -1441,5 +1447,5 @@
             ]
         }
     ],
-    "count": 249
+    "count": 250
 }
