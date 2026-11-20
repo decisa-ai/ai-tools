@@ -49,5 +49,6 @@ clicks
 conversions
 impressions
 max_bid
+image_url
 openai
 chatgpt
