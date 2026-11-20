@@ -45,8 +45,10 @@ translate each platform faithfully with strong defaults — not to flatten them.
 
 **ChatGPT Ads** (ads inside ChatGPT conversations; only when the workspace has it)
 - `create_openai_campaign` drafts the whole launch in one changeset: campaign,
-  ad group and a chat-card ad (title ≤50 chars, body ≤100, landing page, optional
-  square image URL ≥640×640), all created PAUSED. Budget lives on the campaign
+  ad group and a chat-card ad (title ≤50 chars, body ≤100, landing page and a
+  REQUIRED `image_url`: public JPEG/PNG/WebP, square, ≥640×640 — ChatGPT Ads
+  rejects a chat card without an image, so ask the user for one before drafting;
+  the draft is refused without it), all created PAUSED. Budget lives on the campaign
   only. Bidding: `clicks` (default; no `max_bid` = automatic), `conversions`
   (needs a ChatGPT Ads conversion event) or `impressions` (needs a CPM `max_bid`).
 - Tracking: `get_recommended_tracking_template` with platform `openai`. Paid
